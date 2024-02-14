@@ -39,7 +39,7 @@ function OnCognitoAuthenticateUser() {
         IdentityPoolId: secrets.IdentityPoolId, // your identity pool id here
         Logins: {
           // Change the key below according to the specific region your user pool is in.
-          "cognito-idp.us-east-1.amazonaws.com/us-east-1_QrH7S9Ibw": result
+          "cognito-id.us-east-1.amazonaws.com/us-east-1_QrH7S9Ibw": result
             .getIdToken()
             .getJwtToken(),
         },
